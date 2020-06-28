@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include frappe_hijri_datepicker *.css
+recursive-include frappe_hijri_datepicker *.csv
+recursive-include frappe_hijri_datepicker *.html
+recursive-include frappe_hijri_datepicker *.ico
+recursive-include frappe_hijri_datepicker *.js
+recursive-include frappe_hijri_datepicker *.json
+recursive-include frappe_hijri_datepicker *.md
+recursive-include frappe_hijri_datepicker *.png
+recursive-include frappe_hijri_datepicker *.py
+recursive-include frappe_hijri_datepicker *.svg
+recursive-include frappe_hijri_datepicker *.txt
+recursive-exclude frappe_hijri_datepicker *.pyc
