@@ -8,7 +8,6 @@ frappe.ui.form.ControlDate = frappe.ui.form.ControlDate.extend({
             .prependTo(this.input_area);
         this._super();
         function convert_to_hijri(date) {
-            console.log(date)
             if (date.length === 0) {
                 return false
             }
@@ -17,7 +16,6 @@ frappe.ui.form.ControlDate = frappe.ui.form.ControlDate.extend({
             var date_value = new Date(parseInt(date.year()), parseInt(date.month()) - 1, parseInt(date.day()));
             self.$input.val(self.format_for_input(date_value));
         }
-
         $(self.$input_extra_date).calendarsPicker({
             calendar: $.calendars.instance('islamic', 'ar'),
             onSelect: convert_to_hijri,
