@@ -13,7 +13,13 @@
 	direction: rtl;
 }
 .calendars-popup {
-	z-index: 1000;
+	z-index: 9999;
+}
+.calendars-month-year{
+	z-index: 9999;
+}
+.calendars-month-year{
+	z-index: 9999;
 }
 .calendars-disable {
 	position: absolute;
@@ -128,14 +134,17 @@ button.calendars-cmd {
 	background-color: #83c948;
 	color: #fff;
 	font-weight: bold;
+	z-index: 9999;
 }
 .calendars-month-header select, .calendars-month-header input {
 	height: 1.4em;
 	border: none;
+	z-index: 9999;
 }
 .calendars-month-header input {
 	position: absolute;
 	display: none;
+	z-index: 9999;
 }
 .calendars-month table {
 	width: 100%;

@@ -14,7 +14,7 @@ frappe.ui.form.ControlDate = frappe.ui.form.ControlDate.extend({
             var jd = $.calendars.instance('islamic').toJD(parseInt(date[0].year()), parseInt(date[0].month()), parseInt(date[0].day()));
             var date = $.calendars.instance('gregorian').fromJD(jd);
             var date_value = new Date(parseInt(date.year()), parseInt(date.month()) - 1, parseInt(date.day()));
-            self.$input.val(self.format_for_input(date_value));
+            if (date_value){self.$input.val(self.set_formatted_input(date_value));}
         }
         $(self.$input_extra_date).calendarsPicker({
             calendar: $.calendars.instance('islamic', 'ar'),
